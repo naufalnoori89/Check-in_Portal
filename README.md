@@ -1,2 +1,2 @@
-# Check-in_Portal
-Web based check in 
+# Check-in Web Portal
+Web based check in using simple html, css, and js
