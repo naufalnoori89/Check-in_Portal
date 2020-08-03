@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stay Safe KDM KLCC Check-in Application</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" id="signup-form" class="signup-form">
+                        <div class="nav-logo">
+                            <img src="images/logo_final.png" style="height: 50px" class="nav-logo"/>                          
+                        </div>
+                        <h2>Premise Check-in: KDM KL Trillion</h2>
+                        <div class="form-group"> 
+                            <select required type="text" class="form-input" name="nameEmp" id="nameEmp" placeholder="Your Name" required>
+                                <option value="" disabled selected>Your Name (Dont Leave This Blank)</option>
+                                <option value="User 1">User 1</option>
+                                <option value="99">Visitor: Please fill in your name in the next field</option>
+                            </select>
+                        </div>                         
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="nameVisitor" id="nameVisitor" placeholder="Visitor's Name Only (Non-Staff)"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" id="phoneNumber" name="phoneNumber" placeholder="Phone Number (01X-XXXXXXX)"/>
+                            <span>For staff please leave the phone number field blank!!</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="temperature" id="temperature" placeholder="Temperature"/>
+                        </div>  
+                        <div class="form-group">
+                            <input type="checkbox" name="no-fever" id="no-fever" class="no-fever" />
+                            <label for="no-fever" class="label-no-fever"><span><span></span></span>I hereby declare I dont have any flu, cough, and fever symptoms</label>
+    
+                            <input type="checkbox" name="no-redzone" id="no-redzone" class="no-fever" />
+                            <label for="no-redzone" class="label-no-fever"><span><span></span></span>I hereby declare I did not go to any places 
+                                categorized as MCO red zone or visiting other countries for the past 3 months</label>
+                        </div>
+                        <div class="form-group">
+                            <button class="form-submit" type="button" name="submitForm" id="submitForm">SUBMIT</button>
+                            <button class="form-submit-loader" type="button" name="submitForm" id="buttonLoading" style="display:none;">
+                                <img src="images/loader.gif" style="max-width:1rem; max-height:1rem;" />
+                            </button>
+                        </div>
+                        <div>
+                            <p class="disclaimer">This webpage is linked with Malaysian government MySejahtera and your details will be shared to MySejahtera and KDM databases</p>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div> 
+        </section>        
+    </div>
+    <p>Designed by NN</p>
+
+    <!-- JS -->
+    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/test.js"></script>
+</body>
+</html>
+<!--COPYRIGHT BY NAUFAL NOORI 2020/> -->
